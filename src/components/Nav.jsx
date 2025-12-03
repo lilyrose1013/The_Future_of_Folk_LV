@@ -1,0 +1,58 @@
+import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
+export default function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [location.pathname]);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const isActive = (path) => {
+    if (path === '/' && location.pathname === '/') return true;
+    if (path !== '/' && location.pathname.startsWith(path)) return true;
+    return false;
+  };
+
+  return (
+    <nav className="main-nav">
+      <div className="nav-container">
+        <Link to="/" className="nav-logo">
+          <span className="logo-text">Folk Lab</span>
+        </Link>
+        
+        <button 
+          className={`nav-toggle ${isMenuOpen ? 'active' : ''}`}
+          aria-label="Toggle navigation"
+          onClick={toggleMenu}
+        >
+          <span className="hamburger"></span>
+        </button>
+
+        <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
+          <li className="nav-item">
+            <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/posts" className={`nav-link ${isActive('/posts') ? 'active' : ''}`}>Posts</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/docs" className={`nav-link ${isActive('/docs') ? 'active' : ''}`}>Docs</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
