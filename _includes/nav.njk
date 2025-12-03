@@ -1,0 +1,42 @@
+<nav class="main-nav">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <span class="logo-text">Folk Lab</span>
+    </a>
+    
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="/posts/" class="nav-link {% if '/posts/' in page.url %}active{% endif %}">Posts</a>
+      </li>
+      <li class="nav-item">
+        <a href="/docs/" class="nav-link {% if '/docs/' in page.url %}active{% endif %}">Docs</a>
+      </li>
+      <li class="nav-item">
+        <a href="/about/" class="nav-link {% if page.url == '/about/' %}active{% endif %}">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="/contact/" class="nav-link {% if page.url == '/contact/' %}active{% endif %}">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  // Mobile navigation toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navMenu = document.querySelector('.nav-menu');
+  
+  if (navToggle) {
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+  }
+</script>
