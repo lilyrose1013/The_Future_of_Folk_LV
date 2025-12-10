@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Posts from './pages/Posts';
 import PostDetail from './pages/PostDetail';
 import About from './pages/About';
-import Contact from './pages/Contact';
+import Ideation from './pages/Ideation';
 import Docs from './pages/Docs';
 import './App.css';
 
@@ -13,11 +13,11 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/posts/:id" element={<PostDetail />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/ideation" element={<Ideation />} />
           <Route path="/docs" element={<Docs />} />
         </Routes>
       </Layout>
