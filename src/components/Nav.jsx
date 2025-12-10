@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import eestiLogo from '../images/eesti.png';
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,8 @@ export default function Nav() {
     <nav className="main-nav">
       <div className="nav-container">
         <Link to="/" className="nav-logo">
-          <span className="logo-text">Folk Lab</span>
+          <span className="logo-text">The Future of Estonian Folk: Clothing</span>
+          <img src={eestiLogo} alt="Eesti Logo" className="logo-image" />
         </Link>
         
         <button 
