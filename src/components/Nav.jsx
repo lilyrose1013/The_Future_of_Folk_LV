@@ -42,16 +42,19 @@ export default function Nav() {
             <Link to="/" className={`nav-link ${isActive('/') ? 'active' : ''}`}>Home</Link>
           </li>
           <li className="nav-item">
-            <Link to="/posts" className={`nav-link ${isActive('/posts') ? 'active' : ''}`}>Posts</Link>
+            <Link to="/posts" className={`nav-link ${isActive('/posts') ? 'active' : ''}`}>Overview</Link>
           </li>
           <li className="nav-item">
-            <Link to="/docs" className={`nav-link ${isActive('/docs') ? 'active' : ''}`}>Docs</Link>
+            <Link to="/documentation" className={`nav-link ${isActive('/documentation') ? 'active' : ''}`}>Documentation</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/ideation" className={`nav-link ${isActive('/ideation') ? 'active' : ''}`}>Ideation</Link>
           </li>
           <li className="nav-item">
             <Link to="/about" className={`nav-link ${isActive('/about') ? 'active' : ''}`}>About</Link>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className={`nav-link ${isActive('/contact') ? 'active' : ''}`}>Contact</Link>
+            <Link to="/sources" className={`nav-link ${isActive('/sources') ? 'active' : ''}`}>Sources</Link>
           </li>
         </ul>
       </div>

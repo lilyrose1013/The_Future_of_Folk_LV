@@ -22,70 +22,29 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-container">
         <div className="footer-section footer-about">
-          <h3>Folk Lab</h3>
-          <p>Exploring the intersection of traditional folk practices and modern innovation. Building bridges between past and present through community, creativity, and cultural preservation.</p>
+          <h3>The Future of Estonain Folk</h3>
+          <p>How can we perserve historical, indiginous practices whilstill advancing with the rest of the world norms?</p>
         </div>
         
         <div className="footer-section footer-links">
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/posts">Posts</Link></li>
-            <li><Link to="/docs">Documentation</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/posts">Overview</Link></li>
+            <li><Link to="/documentation">Documentation</Link></li>
+            <li><Link to="/ideation">Ideation</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/sources">Sources</Link></li>
           </ul>
-        </div>
-        
-        <div className="footer-section footer-community">
-          <h4>Community</h4>
-          <ul>
-            <li><a href="#">Join Our Newsletter</a></li>
-            <li><a href="#">Discussion Forum</a></li>
-            <li><a href="#">Events & Workshops</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Contributors</a></li>
-          </ul>
-        </div>
-        
-        <div className="footer-section footer-social">
-          <h4>Connect With Us</h4>
-          <ul className="social-links">
-            <li><a href="#" aria-label="Twitter">Twitter</a></li>
-            <li><a href="#" aria-label="Instagram">Instagram</a></li>
-            <li><a href="#" aria-label="GitHub">GitHub</a></li>
-            <li><a href="#" aria-label="YouTube">YouTube</a></li>
-          </ul>
-          <div className="newsletter-signup">
-            <p>Stay updated with our latest stories</p>
-            <form className="newsletter-form" onSubmit={handleSubmit}>
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                aria-label="Email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                disabled={isSubmitting}
-                required
-              />
-              <button type="submit" disabled={isSubmitting}>
-                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
-              </button>
-            </form>
-          </div>
         </div>
       </div>
       
       <div className="footer-bottom">
         <div className="footer-legal">
-          <p>&copy; {currentYear} Folk Lab. All rights reserved.</p>
-          <div className="footer-legal-links">
-            <Link to="/privacy">Privacy Policy</Link>
-            <span className="separator">•</span>
-            <Link to="/terms">Terms of Service</Link>
+          <p>&copy; {currentYear} The Future of Estonian Folk Clothing.</p>
+          
           </div>
         </div>
-      </div>
     </footer>
   );
 }
