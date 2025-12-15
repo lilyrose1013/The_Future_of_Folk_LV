@@ -1,9 +1,9 @@
 import finalImage from '../images/final.png';
 import valgustamePDF from '../Documents/Valgustame Isamaa - Copy.pdf';
 
-export default function Posts() {
+export default function Overview() {
   return (
-    <div className="posts-page page">
+    <div className="overview-page page">
       <header className="page-header">
         <h1>Overview</h1>
       </header>

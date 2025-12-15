@@ -11,6 +11,14 @@ export default function About() {
 This future is inhabited by humans affected by pro tech-based companies pushing for less traditional practices in the name of progress, while undermined cultures are trying to maintain their traditional rituals. 
 This needs to be imagined to help understand cultural rituals in order to prevent them from dying out; understanding the systems of generational memory of Estonian folk clothing practice to prevent extinction. This future takes place in 2070 where the older generation has died out and are unable to continue teaching the traditional clothing construction practices. This future is viewed through a technological and cultural lens to gain a better understanding of how they are able to mesh in a respectful way.
 . </p>
+     <section className="project-description">
+          <h2>Project Description</h2>
+          <p>
+            <strong>ValgustameIsamaa</strong> My outfit is a reimagination of Traditional Folk Clothing, within 
+            shape and manufacturing methods using only machine and hand sewing techniques with
+             the addition of patterns made out of LED’s, which is a reimagined version of a tech-based 
+             adaptation where tradition evolves with the future norms to maintain relevance. 
+        </section>
       </div>
     </div>
   );
