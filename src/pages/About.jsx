@@ -16,8 +16,9 @@ This needs to be imagined to help understand cultural rituals in order to preven
           <p>
             <strong>ValgustameIsamaa</strong> My outfit is a reimagination of Traditional Folk Clothing, within 
             shape and manufacturing methods using only machine and hand sewing techniques with
-             the addition of patterns made out of LED’s, which is a reimagined version of a tech-based 
+             the addition of patterns made out of LED's, which is a reimagined version of a tech-based 
              adaptation where tradition evolves with the future norms to maintain relevance. 
+          </p>
         </section>
       </div>
     </div>
