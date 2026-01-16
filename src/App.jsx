@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/The_Future_of_Folk_LV">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
